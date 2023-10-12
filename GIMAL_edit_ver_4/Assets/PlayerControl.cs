@@ -11,28 +11,41 @@ public class PlayerControl : MonoBehaviour
     float moveHor =0;
     bool isJumping;
 
-    // Start is called before the first frame update
+    public CameraControl CameraControl;
+
     void Start()
     {
         Prigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        moveVert = Input.GetAxis("Vertical")*moveSpeed;
-        moveHor = Input.GetAxis("Horizontal")*moveSpeed;
+        moveVert = Input.GetAxis("Vertical") * moveSpeed;
+        moveHor = Input.GetAxis("Horizontal") * moveSpeed;
+        transform.Translate(moveHor, 0, moveVert);
 
-        if(!isJumping ) 
+
+        //공중에 있는게 아니라면 조작가능
+        if (!isJumping )
         {
-            transform.Translate(moveHor, 0, moveVert);
-        }
-        else
-        {
-            if(Input.GetKey(KeyCode.Space))
+
+            //공중에 있는게 아니라면 점프 가능(미완)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                Prigidbody.AddForce(Vector3.up * 100f);
+                Prigidbody.AddForce(Vector3.up * 1000f);
+                isJumping=true;
+            }
+
+            //전진 중에는 카메라 방향으로 이동
+            if (Input.GetKey(KeyCode.W))//&& Input.anyKey == false
+            {
+                transform.eulerAngles = new Vector3(0,CameraControl.MouseRotationY , 0);
             }
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        isJumping = false;
     }
 }
