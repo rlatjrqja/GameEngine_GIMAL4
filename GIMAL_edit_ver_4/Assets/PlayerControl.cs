@@ -12,10 +12,13 @@ public class PlayerControl : MonoBehaviour
     bool isJumping;
 
     public CameraControl CameraControl;
+    GameManager GM;
 
     void Start()
     {
         Prigidbody = GetComponent<Rigidbody>();
+        GM = FindObjectOfType<GameManager>();
+        //GM = GetComponent<GameManager>();
     }
 
     void Update()
@@ -41,6 +44,12 @@ public class PlayerControl : MonoBehaviour
             {
                 transform.eulerAngles = new Vector3(0,CameraControl.MouseRotationY , 0);
             }
+        }
+
+        if(transform.position.y < -10)
+        {
+            GM.Die(this.gameObject);
+            Destroy(this);
         }
     }
 
