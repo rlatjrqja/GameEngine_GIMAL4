@@ -61,6 +61,7 @@
     <Compile Include="Assets\CameraControl.cs" />
     <Compile Include="Assets\PlayerControl.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\SavePoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

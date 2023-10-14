@@ -355,6 +355,7 @@
 "Assets/CameraControl.cs"
 "Assets/GameManager.cs"
 "Assets/PlayerControl.cs"
+"Assets/SavePoint.cs"
 -langversion:9.0
 
 /deterministic

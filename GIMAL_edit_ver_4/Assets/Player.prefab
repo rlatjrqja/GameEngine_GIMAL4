@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1798743852470821891}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.02
   CameraControl: {fileID: 2378543489568373980}
-  GM: {fileID: 0}
 --- !u!54 &1798743852470821891
 Rigidbody:
   m_ObjectHideFlags: 0
