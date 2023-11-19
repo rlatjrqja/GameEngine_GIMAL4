@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    Vector3 StartPoint;
     Vector3 SavePoint;
+    Vector3 StartPoint;
     bool isSaved;
-    //public SavePoint[] SavePointArray;
     List<GameObject> SavePointArray = new List<GameObject>();
 
     public GameObject Player;
+    //public GameObject SpawnPoint;
+
+
 
     private void Awake()
     {
@@ -20,8 +22,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        isSaved=false;
-        Instantiate(Player, SavePoint, Quaternion.identity);
+        //StartPoint = SpawnPoint.transform.position;
+        isSaved =false;
+        Instantiate(Player, StartPoint, Quaternion.identity);
     }
 
     void Update()

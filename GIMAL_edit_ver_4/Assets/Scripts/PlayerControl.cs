@@ -62,6 +62,11 @@ public class PlayerControl : MonoBehaviour
             Destroy(this);
         }
 
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            transform.position = new Vector3(0, 0, 0);
+        }
+
         isJumping = false;
     }
 }
