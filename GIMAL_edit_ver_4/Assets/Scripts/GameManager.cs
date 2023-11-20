@@ -11,8 +11,13 @@ public class GameManager : MonoBehaviour
     List<GameObject> SavePointArray = new List<GameObject>();
 
     public GameObject Player;
+    public SoundManager SoundManager;
     //public GameObject SpawnPoint;
 
+    AudioSource ad;
+    [Header("audioClips")]
+    public AudioClip dieSound;
+    public AudioClip spawnSound;
 
 
     private void Awake()
@@ -23,6 +28,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //StartPoint = SpawnPoint.transform.position;
+        ad = GetComponent<AudioSource>();
+
         isSaved =false;
         Instantiate(Player, StartPoint, Quaternion.identity);
     }
@@ -30,6 +37,12 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        ad.clip = clip;
+        ad.Play();
     }
 
     public void SetSavePoint(GameObject obj)
@@ -44,6 +57,7 @@ public class GameManager : MonoBehaviour
     public void Die(GameObject deadPlayer)
     {
         target = deadPlayer;
+        PlaySound(dieSound);
         Invoke("DelayToRespawn", 2f);
     }
 
@@ -58,6 +72,7 @@ public class GameManager : MonoBehaviour
         }
         else//세이브 후 두번째 사망, 먹었던 세이브 전부 취소
         {
+            //PlaySound(spawnSound);
             Instantiate(Player, StartPoint, Quaternion.identity);
             foreach (var SavePointObj in SavePointArray)
             {
