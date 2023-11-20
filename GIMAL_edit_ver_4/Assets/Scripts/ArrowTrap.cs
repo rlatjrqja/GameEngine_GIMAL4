@@ -6,6 +6,9 @@ public class ArrowTrab : MonoBehaviour
     public bool trapreload = true;
     int i = 0;
     public GameObject ArrowShot;
+    public GameObject StoneTrap;
+    public GameObject PunchTrap;
+    public string trapname;
 
     void Update()
     {
@@ -20,7 +23,18 @@ public class ArrowTrab : MonoBehaviour
             else if (isTrapped && trapreload)
             {
                 trapreload = false;
-                ArrowShot.SendMessage("Shot");
+                if(trapname == "arrow")
+                {
+                    ArrowShot.SendMessage("Shot");
+                }
+                if(trapname == "stone")
+                {
+                    StoneTrap.SendMessage("Roll");
+                }
+                if(trapname == "punch")
+                {
+                    PunchTrap.SendMessage("Punch");
+                }
             }
         }
         if (!isTrapped)
