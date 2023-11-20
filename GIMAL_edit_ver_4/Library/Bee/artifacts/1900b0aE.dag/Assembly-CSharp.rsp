@@ -361,6 +361,10 @@
 "Assets/Scripts/PlayerControl.cs"
 "Assets/Scripts/Rotate.cs"
 "Assets/Scripts/SavePoint.cs"
+"Assets/Scripts/SoundManager.cs"
+"Assets/Scripts/TitleManager.cs"
+"Assets/Stylized_Astronaut/Character/AstronautPlayer.cs"
+"Assets/Stylized_Astronaut/Character/AstronautThirdPersonCamera.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -395,7 +399,6 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
-"Assets/TitleManager.cs"
 -langversion:9.0
 
 /deterministic
