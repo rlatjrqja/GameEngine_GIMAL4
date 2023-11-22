@@ -35,6 +35,10 @@ public class ArrowTrab : MonoBehaviour
                 {
                     PunchTrap.SendMessage("Punch");
                 }
+                if (trapname == "Manyarrow")
+                {
+                    ArrowShot.SetActive(true);
+                }
             }
         }
         if (!isTrapped)
