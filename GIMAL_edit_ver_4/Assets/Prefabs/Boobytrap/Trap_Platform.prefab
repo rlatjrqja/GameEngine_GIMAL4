@@ -122,4 +122,5 @@ MonoBehaviour:
   trapreload: 1
   ArrowShot: {fileID: 0}
   StoneTrap: {fileID: 0}
-  trapname: 
+  PunchTrap: {fileID: 0}
+  trapname: arrow
