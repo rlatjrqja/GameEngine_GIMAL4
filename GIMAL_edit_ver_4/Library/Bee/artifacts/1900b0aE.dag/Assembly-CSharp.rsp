@@ -360,18 +360,16 @@
 "Assets/Scripts/CameraControl.cs"
 "Assets/Scripts/Disappear.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/movePlatform.cs"
 "Assets/Scripts/PlayerControl.cs"
 "Assets/Scripts/PunchTrap.cs"
 "Assets/Scripts/Rotate.cs"
 "Assets/Scripts/SavePoint.cs"
-<<<<<<< HEAD
-"Assets/Scripts/StoneTrap.cs"
-=======
 "Assets/Scripts/SoundManager.cs"
+"Assets/Scripts/StoneTrap.cs"
 "Assets/Scripts/TitleManager.cs"
 "Assets/Stylized_Astronaut/Character/AstronautPlayer.cs"
 "Assets/Stylized_Astronaut/Character/AstronautThirdPersonCamera.cs"
->>>>>>> 5c38ed6becd8aae19d5aed45ec55bfed3a898e0a
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
