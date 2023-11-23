@@ -5,11 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 638362532577938992
-=======
-      ticks: 638362471750212249
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
+      ticks: 638363223357077212
     m_Hash: 2850356363
   m_LockFileStatus:
     m_FilePath: C:/YUHAN/GameEngine_GIMAL4/GIMAL_edit_ver_4/Packages/packages-lock.json
@@ -17,11 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 638362532577948979
-=======
-      ticks: 638362471750212249
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
+      ticks: 638363223357077212
     m_Hash: 3977217051
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

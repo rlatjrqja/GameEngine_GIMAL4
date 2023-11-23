@@ -53,14 +53,9 @@
     <UnityVersion>2022.3.8f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
-    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
-=======
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\TitleManager.cs" />
@@ -108,10 +103,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\stoneScript.cs" />
+    <Compile Include="Assets\endingScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\SavePoint.cs" />
     <Compile Include="Assets\Scripts\AxeMove.cs" />
+    <Compile Include="Assets\particleScript.cs" />
     <Compile Include="Assets\Scripts\ArrowMove.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\Disappear.cs" />

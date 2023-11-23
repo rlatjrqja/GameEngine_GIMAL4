@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public SoundManager SoundManager;
     //public GameObject SpawnPoint;
 
+    float playTime = 0;
+
     AudioSource ad;
     [Header("audioClips")]
     public AudioClip dieSound;

@@ -19265,13 +19265,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1450363,
-      "PayloadLength": 35552,
-=======
       "PayloadOffset": 1351697,
-      "PayloadLength": 32024,
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
+      "PayloadLength": 32112,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -19283,11 +19278,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1486002,
-=======
-      "PayloadOffset": 1383808,
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
+      "PayloadOffset": 1383896,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -19531,6 +19522,8 @@
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
+        "Assets/endingScript.cs",
+        "Assets/particleScript.cs",
         "Assets/Scripts/ArrowMove.cs",
         "Assets/Scripts/ArrowShot.cs",
         "Assets/Scripts/ArrowTrap.cs",
@@ -19584,13 +19577,8 @@
         "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs",
         "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs",
         "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs",
-<<<<<<< HEAD
-        "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
-=======
         "C:/Program Files/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp"
       ],
       "Outputs": [
@@ -19827,11 +19815,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1486098,
-=======
-      "PayloadOffset": 1383904,
->>>>>>> 12c3c51a32fe65901e5e04e9b75675e7e6285d87
+      "PayloadOffset": 1383992,
       "PayloadLength": 9366,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
