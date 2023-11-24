@@ -14,6 +14,7 @@ public class particleScript : MonoBehaviour
     void Update()
     {
         ptimer += Time.deltaTime;
-        if(ptimer > 2f) gameObject.SetActive(false);
+        //if(ptimer > 2f) gameObject.SetActive(false);
+        if (ptimer > 2f) Destroy(gameObject);
     }
 }

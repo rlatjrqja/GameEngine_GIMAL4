@@ -7,14 +7,21 @@ public class PunchTrap : MonoBehaviour
 {
     float posz;
     bool punch = false;
+    Transform initT;
+
     // Start is called before the first frame update
     void Start()
     {
         posz = transform.position.z;
+
+        initT = transform;
+
+        Debug.Log(initT.position);
     }
     void Punch()
     {
         punch = true;
+        Invoke("ReLoad", 10f);
     }
 
     // Update is called once per frame
@@ -43,5 +50,14 @@ public class PunchTrap : MonoBehaviour
             Vector3 pushDirection = collision.contacts[0].point - transform.position;
             otherRigidbody.AddForce(pushDirection * pushForce, ForceMode.Impulse);
         }
+    }
+
+    void ReLoad()
+    {
+        punch = false;
+        transform.position = initT.position;
+        transform.rotation = initT.rotation;
+
+        Debug.Log(initT.position);
     }
 }

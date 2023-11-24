@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,16 +16,19 @@ public class GameManager : MonoBehaviour
     //public GameObject SpawnPoint;
 
     float playTime = 0;
+    public TextMeshProUGUI timerText;
 
     AudioSource ad;
     [Header("audioClips")]
     public AudioClip dieSound;
     public AudioClip spawnSound;
 
+    public float sec = 0;
+    public float min = 0;
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -38,7 +42,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        playTime += Time.deltaTime;
+        sec = playTime % 60;
+        min = playTime / 60;
+        timerText.text = string.Format("{0:D2}:{1:D2}", (int)min, (int)sec);
+        //if(sec>=60) sec
     }
 
     public void PlaySound(AudioClip clip)

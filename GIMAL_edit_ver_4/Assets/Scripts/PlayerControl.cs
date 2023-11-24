@@ -21,7 +21,8 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector3(-259, 15, 175);
+        //transform.position = new Vector3(-259, 15, 175);
+        transform.position = new Vector3(0, 0, 10);
         //transform.position = new Vector3(36,3,90);
 
         Prigidbody = GetComponent<Rigidbody>();
@@ -77,7 +78,9 @@ public class PlayerControl : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Ground"))
         {
-            transform.position = new Vector3(0, 0, 0);
+            GM.Die(this.gameObject);
+            Destroy(this);
+            //transform.position = new Vector3(0, 0, 0);
         }
 
         isJumping = false;
