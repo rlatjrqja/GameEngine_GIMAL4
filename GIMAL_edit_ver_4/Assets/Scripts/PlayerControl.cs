@@ -21,9 +21,6 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
-        //transform.position = new Vector3(-259, 15, 175);
-        transform.position = new Vector3(0, 0, 10);
-        //transform.position = new Vector3(36,3,90);
 
         Prigidbody = GetComponent<Rigidbody>();
         GM = FindObjectOfType<GameManager>();

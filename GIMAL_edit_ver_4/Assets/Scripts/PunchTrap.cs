@@ -14,7 +14,6 @@ public class PunchTrap : MonoBehaviour
     {
         initT = transform.position;
 
-        Debug.Log(initT);
     }
     void Punch()
     {
@@ -52,6 +51,5 @@ public class PunchTrap : MonoBehaviour
         punch = false;
         transform.position = initT;
 
-        Debug.Log(initT);
     }
 }

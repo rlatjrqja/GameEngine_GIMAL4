@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        //StartPoint = SpawnPoint.transform.position;
+        StartPoint = new Vector3(0,1,0);
         ad = GetComponent<AudioSource>();
 
         isSaved =false;
