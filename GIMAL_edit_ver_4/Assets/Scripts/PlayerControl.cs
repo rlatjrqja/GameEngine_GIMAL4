@@ -33,8 +33,8 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        moveVert = Input.GetAxis("Vertical") * moveSpeed;
-        moveHor = Input.GetAxis("Horizontal") * moveSpeed;
+        moveVert = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        moveHor = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
         transform.Translate(moveHor, 0, moveVert);
 

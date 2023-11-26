@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class stoneScript : MonoBehaviour
 {
+    public Vector3 pos;
     Rigidbody rb;
-
-    void start()
+    private void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>(); 
+        rb.useGravity = false;
+        rb.isKinematic = true;
+        pos = transform.position;
+    }
+    void Roll()
+    {
+        rb.useGravity = true;
+        rb.isKinematic = false;
+        Invoke("Reload", 30f);
+    }
+    void Reload()
+    {
+        transform.position = pos;
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
-        
-    }
 }

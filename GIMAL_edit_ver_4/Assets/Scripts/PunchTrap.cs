@@ -7,16 +7,14 @@ public class PunchTrap : MonoBehaviour
 {
     float posz;
     bool punch = false;
-    Transform initT;
+    public Vector3 initT;
 
     // Start is called before the first frame update
     void Start()
     {
-        posz = transform.position.z;
+        initT = transform.position;
 
-        initT = transform;
-
-        Debug.Log(initT.position);
+        Debug.Log(initT);
     }
     void Punch()
     {
@@ -29,14 +27,11 @@ public class PunchTrap : MonoBehaviour
     {
         if(punch)
         {
-            if(transform.position.z < posz + 3)
-            {
-                transform.Translate(Vector3.up * 0.1f);
-            }
+            transform.Translate(Vector3.up * 0.1f);
         }
 
     }
-    public float pushForce = 10000000f;
+    public float pushForce = 100f;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -55,9 +50,8 @@ public class PunchTrap : MonoBehaviour
     void ReLoad()
     {
         punch = false;
-        transform.position = initT.position;
-        transform.rotation = initT.rotation;
+        transform.position = initT;
 
-        Debug.Log(initT.position);
+        Debug.Log(initT);
     }
 }

@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0e1013774c3874a887b6cbd8be110c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.02
+  moveSpeed: 5
   CameraControl: {fileID: 3764565752536723970}
   jumpSound: {fileID: 8300000, guid: 75cb1e935d381a444b45d8cd74f7bbee, type: 3}
   landingSound: {fileID: 8300000, guid: 4ac5d66ccb048dc45b1a03dbf5e79098, type: 3}

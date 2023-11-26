@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class ArrowTrab : MonoBehaviour
@@ -6,7 +7,7 @@ public class ArrowTrab : MonoBehaviour
     public bool trapreload = true;
     int i = 0;
     public GameObject ArrowShot;
-    public GameObject StoneTrap;
+    public GameObject[] StoneTrap;
     public GameObject PunchTrap;
     public string trapname;
 
@@ -29,7 +30,10 @@ public class ArrowTrab : MonoBehaviour
                 }
                 if(trapname == "stone")
                 {
-                    StoneTrap.SendMessage("Roll");
+                    foreach(GameObject i in StoneTrap)
+                    {
+                        i.SendMessage("Roll");
+                    }
                 }
                 if(trapname == "punch")
                 {
