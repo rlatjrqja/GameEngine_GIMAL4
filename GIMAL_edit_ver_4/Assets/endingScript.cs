@@ -117,6 +117,6 @@ public class endingScript : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("TitleScene");
     }
 }
