@@ -20,8 +20,13 @@ public class TitleManager : MonoBehaviour
         camera1.transform.Rotate(0, turnSpeed, 0);
     }
 
-    public void NewGame()
+    public void EasyGame()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("EasyStage");
+    }
+
+    public void HardGame()
+    {
+        SceneManager.LoadScene("HardStage");
     }
 }

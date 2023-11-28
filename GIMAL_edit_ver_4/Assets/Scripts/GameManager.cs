@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,9 +27,13 @@ public class GameManager : MonoBehaviour
     public float sec = 0;
     public float min = 0;
 
+    bool easyMode = false;
+
     private void Awake()
     {
         //DontDestroyOnLoad(gameObject);
+        Scene scene = SceneManager.GetActiveScene();
+        if(scene.name == "EasyStage") easyMode = true;
     }
 
     void Start()
@@ -75,18 +80,26 @@ public class GameManager : MonoBehaviour
     void DelayToRespawn()
     {
         Destroy(target);
-        if(isSaved)//세이브 후 사망
+
+        if(easyMode)
         {
             Instantiate(Player, SavePoint, Quaternion.identity);
-            isSaved=false;
         }
-        else//세이브 후 두번째 사망, 먹었던 세이브 전부 취소
+        else
         {
-            //PlaySound(spawnSound);
-            Instantiate(Player, StartPoint, Quaternion.identity);
-            foreach (var SavePointObj in SavePointArray)
+            if (isSaved)//세이브 후 사망
             {
-                SavePointObj.SetActive(true);
+                Instantiate(Player, SavePoint, Quaternion.identity);
+                isSaved = false;
+            }
+            else//세이브 후 두번째 사망, 먹었던 세이브 전부 취소
+            {
+                //PlaySound(spawnSound);
+                Instantiate(Player, StartPoint, Quaternion.identity);
+                foreach (var SavePointObj in SavePointArray)
+                {
+                    SavePointObj.SetActive(true);
+                }
             }
         }
     }
